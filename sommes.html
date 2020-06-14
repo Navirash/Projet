@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="style3.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title> Qui sommes nous ?</title>
+</head>
+
+
+ <body>
+          <header>
+        <div id ="toggle_btn">
+                <span></span>
+            </div>
+        </header>
+        <nav id="menu">
+
+            <ul>
+                <p> <strong>Bienvenue en Suisse</strong></p>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="lieux.html"> Lieux</a></li>
+                <li><a href="activité.html"> Activités</a></li>
+                <li><a href="gastronomie.html"> Gastronomie</a></li>
+                <li><a href="actualité.html"> Actualité</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="sommes.html"> Qui sommes nous ?</a></li>
+            </ul>
+        </nav>
+
+        <script>
+
+        var btn = document.getElementById('toggle_btn');
+
+        btn.addEventListener("click", cache);
+
+        function boutton(){
+           var nav = document.getElementById('menu').style.display;
+           if(nav=='none'){
+           document.getElementById('menu').style.display='';
+           }
+           else{
+           document.getElementById('menu').style.display='none';
+           }  
+        };
+
+        function cache()
+        {
+            if(window.innerWidth<786)
+            {
+                boutton();
+            }
+            else
+            {
+                document.getElementById('menu').style.display='';
+            }
+        }
+
+
+    </script>
+
+		
+	</header>
+
+	<section id="main-image">
+		
+		<div id="dehors">
+			<h3> Qui sommes-nous ?<br><strong> Des passionnés de la Suisse </strong></h3>  
+		</div>
+
+	</section>
+
+	<section id="histoire">
+
+		<div class="wrapper">
+			<h4>L'histoire du site</h4>
+				<p>La suisse est un pays que nous qualifierons en trois mots : fort, fascinant et époustouflant. L’idée de la création du site est venue au moment où notre équipe entre dans le pays pour la première fois.
+				C’est le choc : ambiance particulière, présence de lieux majestueux, vues incroyables. Quelque chose de spécial émane de ce pays. Après 3 mois en immersion, notre perspective de vie a profondément changé. Alban a même versé une larme lorsque les trois mois se sont écoulés !  Navirash y songe même de vivre là-bas. Ce voyage hors du commun nous a alors poussé à réaliser ce site afin de partager notre passion. Croyez-le ou non, vous avez plein de chose à découvrir!</p> 
+				
+
+		</div> 
+
+	</section>
+
+	<section id="presentation">
+		<div class="wrapper">
+			<h5>Présentation des membres</h5>	
+			
+			<div id="test"></div>
+
+			<ul>
+				<li id="Navi">
+					<h6>Navirash Tharmaseelan</h6>
+					<p> Banquier, depuis le début Navirash est intéressé par le paradis fiscal du pays. Il s'est chargé de l'accueil, activité et à vous de jouer.</p>
+				</li>
+				<li id="Alban">
+					<h6>Alban Biard</h6>
+					<p> Etudiant passionné par la gastronomie. Les paupières d'Alban se sont dilatées lorsque les fromages de la Suisse ont fondu dans sa bouche. Il s'est chargé de la gastronomie et les lieux.</p>
+				</li>
+				<li id= "Théo">
+					<h6>Théo Vu</h6>
+					<p>Aime faire des soirées alcoolisées avec Alban et Navirash. Sa vie a changé au moment où il goûta son premier verre de Langatum. Il s'est chargé de la page actualité et qui sommes-nous ?</p>
+				</li>
+
+			</ul>
+
+			</div>
+		
+		</div> 
+
+
+	</section>
+
+	<section id="contact">
+
+				<h2>Besoin de plus d'informations ?</h2>
+		<p>	Chez Bienvenue en Suisse, nous savons que aller en Suisse est non seulement une grande découverte mais aussi une aventure humaine. C'est pour cette raison que nous nous assurons de vous renseigner au maximum en cas de question. Parce que après tout, rien que le fait de vous faire intéresser par la Suisse, cela nous fait plaisir ! </p>
+
+		<div class="container">
+		    
+			    <div class="ligne">
+			      <div class="haut">
+			        <label for="fname">Prénom</label>
+			      </div>
+			      <div class="bas">
+			        <input type="text" id="fname" name="firstname" placeholder="Votre prénom">
+			      </div>
+			    </div>
+			    <div class="ligne">
+			      <div class="haut">
+			        <label for="lname">Nom</label>
+			      </div>
+			      <div class="bas">
+			        <input type="text" id="lname" name="lastname" placeholder="Votre nom">
+			      </div>
+			    </div>
+			    <div class="ligne">
+			    </div>
+			    <div class="ligne">
+			      <div class="haut">
+			        <label for="subject">Message</label>
+			      </div>
+			      <div class="bas">
+			        <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+			      </div>
+			    </div>
+			    <div class="ligne">
+			      <input type="submit" value="Envoyer">
+			    </div>
+			  </form>
+			
+		</div>
+
+	</section>
+			
+			
+
+    <div class="footer">
+        <div class="corps-footer">
+
+            <div class="footer2">
+                <h1> Bienvenue en Suisse </h1>
+                <p>
+                    Venez voyager et découvir les différentes activités et lieux que réservent le Suisse. Chez Bienvenue en Suisse on sera disponible 24h/24 et 7j/7 pour tous renseignements. Veuillez nous contactez par mail ou par téléphone. On vous souhaite un agréable voyage à travers notre site. Merci ! </p>
+            </div>
+
+            <div class="footer2">
+                <h2> Liens rapide </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="sommes.html"> Qui sommes nous ?</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="actualité.html"> Actualité</a></li>
+
+            </ul>
+        </div>
+
+            <div class="footer2">
+                <h2> Réseaux sociaux  </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="https://fr-fr.facebook.com"> <img id='fb' src="fb15.png"></a></li>
+                <li><a href="https://www.instagram.com/?hl=fr"><img id='insta' src="insta15.png"> </a></li>
+                <li><a href="https://twitter.com/explore"> <img id='twitter' src="twitter16.png"></a></li>
+                <li><a href="https://www.linkedin.com"> <img id='in' src="in15.png"></a></li>
+
+            </ul>
+        </div>
+            <div class="footer2">
+                <h2> Contact </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="#" id='navi'> navirash.tharmaseelan@efrei.net</a></li>
+                <li><a href="#" id="theo"> théo.vu@efrei.net</a></li>
+                <li><a href="#" id="alban"> alban.biard@efrei.net</a></li>
+                <li><a href="#" id="tel"> <U>Téléphone: </U> 0152628654</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+        <div class="copyright">Copyright © Tous droits réservés.</div>

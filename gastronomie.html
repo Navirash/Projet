@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="style.css" rel="stylesheet">
+        <title> Gastronomie</title>
+    </head>
+
+    <body>
+          <header>
+        <div id ="toggle_btn">
+                <span></span>
+            </div>
+        </header>
+        <nav id="menu">
+
+            <ul>
+                <p> <strong>Bienvenue en Suisse</strong></p>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="lieux.html"> Lieux</a></li>
+                <li><a href="activité.html"> Activités</a></li>
+                <li><a href="gastronomie.html"> Gastronomie</a></li>
+                <li><a href="actualité.html"> Actualité</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="sommes.html"> Qui sommes nous ?</a></li>
+            </ul>
+        </nav>
+        <script>
+
+        var btn = document.getElementById('toggle_btn');
+
+        btn.addEventListener("click", cache);
+
+        function boutton(){
+           var nav = document.getElementById('menu').style.display;
+           if(nav=='none'){
+           document.getElementById('menu').style.display='';
+           }
+           else{
+           document.getElementById('menu').style.display='none';
+           }  
+        };
+
+        function cache()
+        {
+            if(window.innerWidth<786)
+            {
+                boutton();
+            }
+            else
+            {
+                document.getElementById('menu').style.display='';
+            }
+        }
+
+
+    </script>
+
+    <img  src="foods.jpg" id="im" style="width:100%; height:600px;">
+
+    <div class="conteneurs">
+        <div class=article4>
+            <img src="specialite-suisse-rosti.jpg">
+            <h4>Le Rösti</h4>
+            <p> Le Rösti est une préparation qui peut accompagner un plat de viande ou se savourer seule si elle est garnie. Il s’agit d’une galette réalisée avec de la pomme de terre finement découpée. Rien à ajouter, l’amidon du tubercule permet à la galette de se tenir. Vous pourrez la savourer agrémentée de légumes, de fromages ou autre dans tous les bons restaurants suisses.</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        <div class=article4>
+            <img src="specialite-suisse.jpg">
+            <h4>Le Älplermagronen</h4>
+            <p> Le Älplermagronen est l’équivalent du gratin de macaroni au fromage ou « mac and cheese » chez les Anglais. Prenez des pommes de terre, des macaronis, de la crème et laissez tout cela gratiner au four. Ajoutez y des oignons caramélisés au moment de servir… dé-li-cieux !</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        
+        <div class=article4>
+            <img src="specialite-suisse-grison.jpg">
+            <h4>La viande des Grisons</h4>
+            <p> Nombreux sont les pays qui ont fait sécher de la viande pour la conserver. La Suisse se distingue tout de même puisque le nom viande des Grisons est directement lié à elle. Les Grisons, c’est un canton de Suisse. Il n’est pas étonnant alors que l’on attribue l’invention de cette délicieuse charcuterie aux helvètes. Pour la réaliser, faites sécher de fines lamelles de viande de bœuf et agrémentez-les d’herbes et d’épices.</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        <div class=article4>
+            <img src="specialite-suisse-pain-depices.jpg">
+            <h4>Pain d'épices </h4>
+            <p> Il y a autant de recette de pain d’épices qu’il y a d’habitants en Suisse. Dans chaque canton, la recette est réinventée et personnalisée avec les ingrédients locaux. Si vous parcourez tout le pays, pensez à acheter une tranche de pain d’épice sur votre passage, vous serez surpris par les variations autour de ce simple dessert !</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        <div class=article4>
+            <img src="specialite-suisse-Large-2.jpg">
+            <h4>Le Pain de poires </h4>
+             <p> Ce pain de poires est à savourer absolument tant sa saveur est surprenante et délicieuse. Quand le pain de poires arrivera sur votre table, vous n’y verrez qu’une simple croustade mais attendez que le dessert soit découpé. Les poires mélangées au vin rouge, dattes, noix, noisettes, amandes, pruneaux et figues délivrent alors toute leurs senteurs… inoubliable.</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+         <div class=article4>
+            <img src="specialite-suisse-tourte-noix.jpg">
+            <h4>Tourte aux noix de L'Engadine</h4>
+             <p> Dans le canton des grisons, la viande de bœuf est mise à sécher et en attendant, on prépare des tourtes aux noix de l’Engadine. Il s’agit d’une tourte à la garniture dense réalisée avec des noix, des noisettes, des amandes liées par du miel et de la crème.</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+        <div class=article4>
+            <img src="specialite-suisse-vin.jpg">
+            <h4>La Damassine</h4>
+             <p> La Damassine est une eau-de-vie réalisée avec la prune damassine que l’on trouve essentiellement dans le massif du Jura. Avec un degré d’alcool avoisinant les 40°, mieux vaut se modérer sur sa consommation !</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+        <div class=article4>
+            <img src="specialite-suisse-alcool.jpg">
+            <h4>La Dôle</h4>
+             <p> Parmi les alcools typiques de Suisse, vous pouvez vous pencher sur la Dôle. Ce vin rouge est issu du Valais et réalisé à partir de deux cépages, le pinot noir et le gamay. Son goût tranché en fait un vin très apprécié pour accompagner une viande. Vous le trouverez sur la carte des vins de toutes les bonnes adresses culinaires !.</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+    </div>
+
+     <section id ="Obj">
+            <div class="wrapper">
+            <h1> Rien de mieux que la gastronomie Suisse</h1>
+            <p> La Suisse c’est montagneux, y a des jolis villages suisses et des stations de ski suisses qui sont un peu les mêmes qu’en France. En revanche, au niveau de la gastronomie, il y a plein de choses que nous n’avons pas chez nous. Au croisement entre la France, l’Italie et l’Allemagne, la Suisse c’est un peu de tout ça et on passe à table. Partagez la gastronomie suisse grâce à la rubrique À vous de jouer . Merci !</p>
+    </div>
+    </section>
+
+
+<div class="footer">
+        <div class="corps-footer">
+
+            <div class="footer2">
+                <h1> Bienvenue en Suisse </h1>
+                <p>
+                    Venez voyager et découvir les différentes activités et lieux que réservent le Suisse. Chez Bienvenue en Suisse on sera disponible 24h/24 et 7j/7 pour tous renseignements. Veuillez nous contactez par mail ou par téléphone. On vous souhaite un agréable voyage à travers notre site. Merci ! </p>
+            </div>
+
+            <div class="footer2">
+                <h2> Liens rapide </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="sommes.html"> Qui sommes nous ?</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="actualité.html"> Actualité</a></li>
+
+            </ul>
+        </div>
+
+            <div class="footer2">
+                <h2> Réseaux sociaux  </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="https://fr-fr.facebook.com"> <img id='fb' src="fb15.png"></a></li>
+                <li><a href="https://www.instagram.com/?hl=fr"><img id='insta' src="insta15.png"> </a></li>
+                <li><a href="https://twitter.com/explore"> <img id='twitter' src="twitter16.png"></a></li>
+                <li><a href="https://www.linkedin.com"> <img id='in' src="in15.png"></a></li>
+
+            </ul>
+        </div>
+            <div class="footer2">
+                <h2> Contact </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="#" id='navi'> navirash.tharmaseelan@efrei.net</a></li>
+                <li><a href="#" id="theo"> théo.vu@efrei.net</a></li>
+                <li><a href="#" id="alban"> alban.biard@efrei.net</a></li>
+                <li><a href="#" id="tel"> <U>Téléphone: </U> 0152628654</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+        <div class="copyright">Copyright © Tous droits réservés.</div>

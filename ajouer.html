@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> À vous de jouer !</title>
+    </head>
+
+    <body>
+         <header>
+        <div id ="toggle_btn">
+                <span></span>
+            </div>
+        </header>
+        <nav id="menu">
+
+            <ul>
+                <p> <strong>Bienvenue en Suisse</strong></p>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="lieux.html"> Lieux</a></li>
+                <li><a href="activité.html"> Activités</a></li>
+                <li><a href="gastronomie.html"> Gastronomie</a></li>
+                <li><a href="actualité.html"> Actualité</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="sommes.html"> Qui sommes nous ?</a></li>
+            </ul>
+        </nav>
+        <script>
+
+        var btn = document.getElementById('toggle_btn');
+
+        btn.addEventListener("click", cache);
+
+        function boutton(){
+           var nav = document.getElementById('menu').style.display;
+           if(nav=='none'){
+           document.getElementById('menu').style.display='';
+           }
+           else{
+           document.getElementById('menu').style.display='none';
+           }  
+        };
+
+        function cache()
+        {
+            if(window.innerWidth<786)
+            {
+                boutton();
+            }
+            else
+            {
+                document.getElementById('menu').style.display='';
+            }
+        }
+
+
+
+    </script>
+
+
+
+    <div class="container">
+        <p> Votre article </p>
+
+        <div class="formulaire">
+            <input type="text" id="title" class="input" placeholder=" Titre">
+        </div>
+
+        <div class="txt">
+            <textarea class="area" id="content" placeholder=" Écrivez votre article..."></textarea>
+        </div>
+
+        <div class="formulaire">
+            <input type="text" id="name" class="input" placeholder="Nom et Prénom">
+        </div>
+
+        <button type="button" id ="button" onclick="ajouterArticle()"> Ajouter votre article </button>
+    </div>
+
+
+
+    <div id="contenu">
+
+        <section id="articles">
+            <article>
+                <h2>Le Cervin en lumière</h2>
+                <h5> Navirash Tharmaseelan</h5>
+                <p>Bonjour, pendant mon voyage en Suisse, j'ai pu observer le cervin en lumière. Le Cervin (ou Cervin germanique) est l'un des sommets montagneux les plus représentatifs du monde, et il s'allume chaque nuit. Une partie du projet #hope projette différents symboles et signes sur le mur. Le village de Zermatt, situé au pied du mont Cervin, entend envoyer un signal d'espoir, exprimer sa solidarité à toutes les personnes touchées et remercier tous ceux qui ont contribué à surmonter cette crise ou les moments difficiles de la vie courante </p>
+            </article>
+            <article>
+                <h2> La Suisse, à côté des vignes</h2>
+                <h5> Navirash Tharmaseelan</h5>
+                <p>Ne ratez pas les vignes de la suisse! En effet, la Suisse possède des vignobles exceptionnels. Les découvrir est une manière très agréable de découvrir ce beau pays: vous pourrez profiter du paysage magnifique et vous arrêter pour le déguster, ou participer à l'un des joyeux événements que nous y avons organisés. du vin. L'un des événements les plus importants est le Château Fuwei, qui n'a lieu qu'une fois par génération! Prochaine réunion: du 18 juillet au 11 août 2019. C'est l'activité tant attendue ...</p>
+            </article>
+
+        </section>
+    </div>
+
+    <div class="footer">
+        <div class="corps-footer">
+
+            <div class="footer2">
+                <h1> Bienvenue en Suisse </h1>
+                <p>
+                    Venez voyager et découvir les différentes activités et lieux que réservent le Suisse. Chez Bienvenue en Suisse on sera disponible 24h/24 et 7j/7 pour tous renseignements. Veuillez nous contactez par mail ou par téléphone. On vous souhaite un agréable voyage à travers notre site. Merci ! </p>
+            </div>
+
+            <div class="footer2">
+                <h2> Liens rapide </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="#"> Qui sommes nous ?</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="#"> Actualité</a></li>
+
+            </ul>
+        </div>
+
+            <div class="footer2">
+                <h2> Réseaux sociaux  </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="https://fr-fr.facebook.com"> <img id='fb' src="fb15.png"></a></li>
+                <li><a href="https://www.instagram.com/?hl=fr"><img id='insta' src="insta15.png"> </a></li>
+                <li><a href="https://twitter.com/explore"> <img id='twitter' src="twitter16.png"></a></li>
+                <li><a href="https://www.linkedin.com"> <img id='in' src="in15.png"></a></li>
+
+            </ul>
+        </div>
+            <div class="footer2">
+                <h2> Contact </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="#" id='navi'> navirash.tharmaseelan@efrei.net</a></li>
+                <li><a href="#" id="theo"> théo.vu@efrei.net</a></li>
+                <li><a href="#" id="alban"> alban.biard@efrei.net</a></li>
+                <li><a href="#" id="tel"> <U>Téléphone: </U> 0152628654</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+        <div class="copyright">Copyright © Tous droits réservés.</div>
+
+    <style>
+
+        *
+        {
+            margin:0;
+            padding:0;
+        }
+
+        body
+        {
+            background: url("suisse15.jpg");
+            background-size: cover;
+            height:auto;
+        }
+
+         #articles
+            {
+                display:flex;
+                flex-wrap: wrap;
+                text-align:center;
+                width:auto;
+                justify-content: center;
+
+
+            }
+            article
+            {
+                background : white;
+                margin: 5px;
+                margin-bottom: 50px;
+                width:300px;
+                padding:20px;
+                line-height:20px;
+                color:#8e8b8b;
+                position: relative;
+
+            }
+
+            article h2
+            {
+                color:#486255;
+                font-size:26px;
+            }
+
+            article p
+            {
+                color:black;
+                font-size:12px;
+
+            }
+
+
+            #contenu {
+                max-width: 1100px;
+                 margin: auto;
+            }
+
+
+        .container
+        {
+            width: 800px;
+            height:600px;
+            background: #fff;
+            margin: 50px auto;
+            box-sizing: border-box;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+
+        }
+
+        @media screen and (max-width: 1080px)
+        {
+            .container
+            {
+                width:90%;
+            }
+        }
+
+        .container p
+        {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 20px;
+            color:#486255;
+            letter-spacing: 1px;
+
+        }
+
+        .input, .txt .area
+        {
+            width:100%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom:25px;
+            border:2px solid #e9eaea;
+            font-size: 14px;
+            border-radius: 5px;
+            outline: none;
+            transition: all 0.5s ease;
+        }
+
+
+        .txt .area
+        {
+            height:200px;
+        }
+
+        button
+        {
+           background-color: #486255;
+           border:none;
+           color:#fff;
+           padding:15px 25px;
+           font-size:12px;
+           border-radius: 12px;
+           text-transform: uppercase;
+           cursor: pointer;
+           box-shadow: 0 3px black; 
+        }
+
+    </style>
+
+    <script>
+            function ajouterArticle()
+           {
+                var title = document.querySelector('#title');
+                var content = document.querySelector('#content');
+                var name = document.querySelector('#name');
+
+                ajouter(title.value,name.value, content.value);
+
+           }
+
+            function ajouter(title, name, content)
+            {
+
+                const h2= document.createElement('h2');
+                const h5 = document.createElement('h5')
+                const p = document.createElement('p');
+                const article=document.createElement('article');
+                const a=document.getElementById('articles');
+
+                h2.textContent = title;
+                h5.textContent = name;
+                p.textContent = content;
+                
+
+                article.appendChild(h2);
+                article.appendChild(h5);
+                article.appendChild(p);
+                a.appendChild(article);
+            }
+
+           /*test*/ ajouter(
+                'Oaxaca, le berceau du chocolat',
+                "Navirash",
+                "Vous êtes des amateurs de chocolat ? On dit qu'Oaxaca est l'endroit idéal pour boire le meilleur chocolat chaud au monde. Même si la formule originale a été modifiée, cette tradition remonte à avant la période de Columbus. Les fèves de cacao sont cultivées depuis 3 500 ans sur les terres actuelles de Tabasco et du Chiapas, et sont un sacrifice et une monnaie pour les Mayas et les Aztèques. Réservé à l'élite, boissons amères, moussues, parfois épicées"
+                
+            )
+
+
+
+        </script>
+
+        
+    
+
+
+
+
+

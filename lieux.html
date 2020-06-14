@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="style.css" rel="stylesheet">
+        <title> Lieux</title>
+    </head>
+
+    <body>
+         <header>
+        <div id ="toggle_btn">
+                <span></span>
+            </div>
+        </header>
+        <nav id="menu">
+
+            <ul>
+                <p> <strong>Bienvenue en Suisse</strong></p>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="lieux.html"> Lieux</a></li>
+                <li><a href="activité.html"> Activités</a></li>
+                <li><a href="gastronomie.html"> Gastronomie</a></li>
+                <li><a href="actualité.html"> Actualité</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="sommes.html"> Qui sommes nous ?</a></li>
+            </ul>
+        </nav>
+        <script>
+
+        var btn = document.getElementById('toggle_btn');
+
+        btn.addEventListener("click", cache);
+
+        function boutton(){
+           var nav = document.getElementById('menu').style.display;
+           if(nav=='none'){
+           document.getElementById('menu').style.display='';
+           }
+           else{
+           document.getElementById('menu').style.display='none';
+           }  
+        };
+
+        function cache()
+        {
+            if(window.innerWidth<786)
+            {
+                boutton();
+            }
+            else
+            {
+                document.getElementById('menu').style.display='';
+            }
+        }
+
+    </script>
+
+    <img  src="suisse100.jpg" id="im" style="width:100%; height:600px;">
+
+    <div class="cont">
+        <div class=article2>
+            <img src="alpes.jpg">
+            <h4>Les Alpes Suisses</h4>
+            <p>La terre alpine couvre 60% de ce beau pays. Par conséquent, dans ces randonnées panoramiques, la flore et la faune sont devenues le centre d'attention. De plus, peut-être trouverez-vous une antilope ou un aigle royal sur le chemin? Les Alpes suisses s'étendent du lac Léman à la frontière autrichienne. De nombreux glaciers et 48 sommets montagneux à plus de 4000 mètres d'altitude occupent le territoire. Veuillez noter que le plus haut sommet est la Pointe Dufour et le plus haut sommet est de 4634 mètres. La plupart des forêts et de nombreux lacs sont construits sur les montagnes.</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        <div class=article2>
+            <img src="martigny.png">
+            <h4>Martigny</h4>
+            <p>C'est une municipalité dynamique et parfaite dans les Alpes valaisannes. Les Romains Martigny le Romain vous invite à découvrir ses vestiges archéologiques. Promenez-vous dans cette belle ville et vivez au rythme de ses nombreuses activités culturelles. De là, vous aurez plusieurs directions pour explorer les Alpes suisses. Passez Sion et explorez cette ville historique: ses tours, châteaux et cathédrales. Comme le Valais, cette riche région viticole propose une variété de vins à déguster en terrasse. Sion est la porte d'entrée de la région de Yotsuya, qui est le plus grand domaine skiable de Suisse, avec une vue imprenable sur le Mont-Fort.</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        <div class=article2>
+            <img src="zermatt.jpg">
+            <h4> Zermatt</h4>
+            <p>Ce village des Alpes valaisannes, doté de nombreux équipements parmi les plus avancés, est l'une des merveilles de la Suisse. Flânez dans ce lieu privilégié entre authenticité et boutiques de luxe. Admirez son architecture traditionnelle valaisanne. À 4478 mètres d'altitude, le Cervin (Matterhorn), le sommet emblématique de la région, offre une vue panoramique. Pour en profiter, prenez le train à engrenages du Gornergrat, vous pouvez atteindre 3000 mètres en 30 minutes.</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        <div class=article2>
+            <img src="interlaken.jpg">
+            <h4> Interlaken</h4>
+            <p>Il s'agit d'une station pittoresque de l'Oberland bernois. La région possède de nombreux lacs et est très populaire auprès des amateurs de sports extrêmes et de plein air. Randonnée, VTT, rafting, parapente, parachutisme, escalade et bien d'autres endroits sont disponibles. De nombreux trains et gondoles sont idéaux pour explorer la région. Ne manquez pas le plateau Schynige, c'est un célèbre balcon des Alpes bernoises et un véritable paradis naturel..</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        <div class=article2>
+            <img src="lugano.jpg">
+            <h4> Lugano, un petit air d'Italie</h4>
+            <p>A la frontière italienne, Lugano est la ville la plus importante du Tessin. Cette métropole internationale est pleine de style méditerranéen. Promenez-vous le long du lac de Lugano entre la forêt et les montagnes. Promenez-vous dans les rues animées des boutiques de luxe. Découvrez de nombreux parcs et bâtiments dans cette ville. Ensuite, prenez le téléphérique pour San Salvatore. Il vous emmène au sommet pour profiter d'un panorama à 360 ° à couper le souffle. Il y a un restaurant sur place face à la montagne pour le déjeuner.</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        <div class=article2>
+            <img src="geneve.jpg">
+            <h4> Genève, la ville internationale</h4>
+            <p>Dans cette ville francophone internationale, plus de 150 nationalités s'affrontent pour des sièges de bar, horlogers de luxe, chocolatiers, diplomates et artistes se réunissent sur le magnifique lac Léman. Le bateau jaune vif ("Seagull") est pavé de vagues contre le Mont Blanc. Ici, les jours du rythme de marche de la vieille ville, les scènes dynamiques des cafés et des musées, les expéditions sur des pagaies debout sur le lac, et les jours de sprint et de course sous son célèbre débit d'eau..</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+    </div>
+      <section id ="Obj">
+            <div class="wrapper">
+            <h1> Connaissez-vous d'autres lieux incroyable ?</h1>
+            <p> <strong> Si vous connaissez d'autres lieux incroyables et que vous souhaitez le partager pour nos futurs voyageurs en Suisse. On vous invite à cliquez sur la rubrique "À vous de jouer " et écrivez nous les lieux que vous avez découvert. Conseillez nos futurs voyageurs pour qu'ils passent un séjour inoubliable. Merci !</strong></p>
+    </div>
+    </section>
+
+    <div class="footer">
+        <div class="corps-footer">
+
+            <div class="footer2">
+                <h1> Bienvenue en Suisse </h1>
+                <p>
+                    Venez voyager et découvir les différentes activités et lieux que réservent le Suisse. Chez Bienvenue en Suisse on sera disponible 24h/24 et 7j/7 pour tous renseignements. Veuillez nous contactez par mail ou par téléphone. On vous souhaite un agréable voyage à travers notre site. Merci ! </p>
+            </div>
+
+            <div class="footer2">
+                <h2> Liens rapide </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="sommes.html"> Qui sommes nous ?</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="actualité.html"> Actualité</a></li>
+
+            </ul>
+        </div>
+
+            <div class="footer2">
+                <h2> Réseaux sociaux  </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="https://fr-fr.facebook.com"> <img id='fb' src="fb15.png"></a></li>
+                <li><a href="https://www.instagram.com/?hl=fr"><img id='insta' src="insta15.png"> </a></li>
+                <li><a href="https://twitter.com/explore"> <img id='twitter' src="twitter16.png"></a></li>
+                <li><a href="https://www.linkedin.com"> <img id='in' src="in15.png"></a></li>
+
+            </ul>
+        </div>
+            <div class="footer2">
+                <h2> Contact </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="#" id='navi'> navirash.tharmaseelan@efrei.net</a></li>
+                <li><a href="#" id="theo"> théo.vu@efrei.net</a></li>
+                <li><a href="#" id="alban"> alban.biard@efrei.net</a></li>
+                <li><a href="#" id="tel"> <U>Téléphone: </U> 0152628654</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+        <div class="copyright">Copyright © Tous droits réservés.</div>
+
+
+   

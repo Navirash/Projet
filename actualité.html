@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="style2.css" rel="stylesheet">
+	<title> Information coronavirus </title>
+</head>
+
+<body>
+
+	<header>
+        <div id ="toggle_btn">
+                <span></span>
+            </div>
+        </header>
+        <nav id="menu">
+
+            <ul>
+                <p> <strong>Bienvenue en Suisse</strong></p>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="lieux.html"> Lieux</a></li>
+                <li><a href="activité.html"> Activités</a></li>
+                <li><a href="gastronomie.html"> Gastronomie</a></li>
+                <li><a href="actualité.html"> Actualité</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="sommes.html"> Qui sommes nous ?</a></li>
+            </ul>
+        </nav>
+        <script>
+
+        var btn = document.getElementById('toggle_btn');
+
+        btn.addEventListener("click", cache);
+
+        function boutton(){
+           var nav = document.getElementById('menu').style.display;
+           if(nav=='none'){
+           document.getElementById('menu').style.display='';
+           }
+           else{
+           document.getElementById('menu').style.display='none';
+           }  
+        };
+
+        function cache()
+        {
+            if(window.innerWidth<786)
+            {
+                boutton();
+            }
+            else
+            {
+                document.getElementById('menu').style.display='';
+            }
+        }
+
+
+    </script>
+
+		
+	</header>
+
+	<section id="main-image">
+		
+		<div id="dehors">
+			<h3> Coronavirus n-Cov <br><strong> le point de la situation </strong></h3>  
+		</div>
+
+	</section>
+
+	<section id="COVID-19">
+
+		<div class="wrapper">
+			<h4><strong>Situation actuelle <strong> </h4>
+				<p>La maladie à coronavirus 2019 (COVID-19) est une ‎maladie infectieuse due à un coronavirus découvert ‎récemment. ‎
+				La majorité des personnes atteintes de la COVID-19 ‎ne ressentiront que des symptômes bénins ou ‎modérés et guériront 			sans traitement particulière. Le virus qui entraîne la COVID-19 se transmet ‎principalement par des gouttelettes produites ‎lorsqu’une personne infectée tousse, éternue, ou ‎lors d’une expiration. Ces gouttelettes sont trop ‎lourdes pour rester dans l’air et tombent ‎rapidement sur le sol ou sur toute surface proche.‎ Vous pouvez être infecté en respirant le virus, si ‎vous êtes à proximité d’une personne malade, ou en ‎touchant une surface contaminée puis vos yeux, ‎votre nez ou votre bouche.‎ </p> 
+		</div> 
+
+	</section>
+
+	<section id="situation">
+
+		<div class="wrapper">
+			<div class="visuel">
+  			<div class="message">
+   				 Situation en cours
+ 		 	</div>
+ 		 	<div class="laser"></div>
+			</div>
+
+				<table id="tableau">
+				  <tr>
+				    <th>Pays</th>
+				    <th>Cas confirmés</th>
+				    <th>Décès</th>
+				  </tr>
+				  <tr>
+				    <td>États-Unis</td>
+				    <td>1 979 971</td>
+				    <td>111 767</td>
+				  </tr>
+				  <tr>
+				    <td>Brésil</td>
+				    <td>739 503</td>
+				    <td>38 406</td>
+				  </tr>
+				  <tr>
+				    <td>Russie</td>
+				    <td>493 023</td>
+				    <td>6 350</td>
+				  </tr>
+				  <tr>
+				    <td>Royaume-Uni</td>
+				    <td>290 581</td>
+				    <td>40 968</td>
+				  </tr>
+				  <tr>
+				    <td>Inde</td>
+				    <td>276 583</td>
+				    <td>7 745</td>
+				  </tr>
+				  <tr>
+				    <td>Espagne</td>
+				    <td>241 966</td>
+				    <td>27 136</td>
+				  </tr>
+				  <tr>
+				    <td>Italie</td>
+				    <td>235 561</td>
+				    <td>34 043</td>
+				  </tr>
+				  <tr>
+				    <td>Pérou</td>
+				    <td>199 696</td>
+				    <td>5 571</td>
+				  </tr>
+				  <tr>
+				    <td>France</td>
+				    <td>191 523</td>
+				    <td>29 299</td>
+				  </tr>
+				  <tr>
+				    <td>Allemagne</td>
+				    <td>186 522</td>
+				    <td>8 748</td>
+				  </tr>
+				</table>
+				</div>
+
+	</section>
+
+	<section id="geste">
+
+		<div class="wrapper">
+			<h5>Quand vous serez en suisse</h5>
+			<ul>
+				<li id="prevention">
+					<h6>Prévention</h6>
+					<p> Restez chez vous </p>
+				</li>
+				<li id="coude">
+					<h6>Coude</h6>
+					<p> Toussez dedans </p>
+				</li>
+				</li>
+				<li id= "distances">
+					<h6>Distances</h6>
+					<p>Gardez-les</p>
+				</li>
+				<li id= "mains">
+					<h6>Mains</h6>
+					<p>Lavez-les souvent</p>
+				</li>
+			</ul>
+		</div> 
+
+	</section>
+
+	<div class="footer">
+        <div class="corps-footer">
+
+            <div class="footer2">
+                <h1> Bienvenue en Suisse </h1>
+                <p>
+                    Venez voyager et découvir les différentes activités et lieux que réservent le Suisse. Chez Bienvenue en Suisse on sera disponible 24h/24 et 7j/7 pour tous renseignements. Veuillez nous contactez par mail ou par téléphone. On vous souhaite un agréable voyage à travers notre site. Merci ! </p>
+            </div>
+
+     
+
+            <div class="footer2">
+                <h2> Liens rapide </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="sommes.html"> Qui sommes nous ?</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="actualité.html"> Actualité</a></li>
+
+            </ul>
+        </div>
+
+            <div class="footer2">
+                <h2> Réseaux sociaux  </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="https://fr-fr.facebook.com"> <img id='fb' src="fb15.png"></a></li>
+                <li><a href="https://www.instagram.com/?hl=fr"><img id='insta' src="insta15.png"> </a></li>
+                <li><a href="https://twitter.com/explore"> <img id='twitter' src="twitter16.png"></a></li>
+                <li><a href="https://www.linkedin.com"> <img id='in' src="in15.png"></a></li>
+
+            </ul>
+        </div>
+            <div class="footer2">
+                <h2> Contact </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="#" id='navi'> navirash.tharmaseelan@efrei.net</a></li>
+                <li><a href="#" id="theo"> théo.vu@efrei.net</a></li>
+                <li><a href="#" id="alban"> alban.biard@efrei.net</a></li>
+                <li><a href="#" id="tel"> <U>Téléphone: </U> 0152628654</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+        <div class="copyright">Copyright © Tous droits réservés.</div>
+
+</body>
+
+</html>

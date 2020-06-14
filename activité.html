@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="style.css" rel="stylesheet">
+        <title> Activitées</title>
+    </head>
+
+    <body>
+         <header>
+        <div id ="toggle_btn">
+                <span></span>
+            </div>
+        </header>
+        <nav id="menu">
+
+            <ul>
+                <p> <strong>Bienvenue en Suisse</strong></p>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="lieux.html"> Lieux</a></li>
+                <li><a href="activité.html"> Activités</a></li>
+                <li><a href="gastronomie.html"> Gastronomie</a></li>
+                <li><a href="actualité.html"> Actualité</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="sommes.html"> Qui sommes nous ?</a></li>
+            </ul>
+        </nav>
+        <script>
+
+        var btn = document.getElementById('toggle_btn');
+
+        btn.addEventListener("click", cache);
+
+        function boutton(){
+           var nav = document.getElementById('menu').style.display;
+           if(nav=='none'){
+           document.getElementById('menu').style.display='';
+           }
+           else{
+           document.getElementById('menu').style.display='none';
+           }  
+        };
+
+        function cache()
+        {
+            if(window.innerWidth<786)
+            {
+                boutton();
+            }
+            else
+            {
+                document.getElementById('menu').style.display='';
+            }
+        }
+
+
+    </script>
+
+    <img  src="suisse.jpg" style="width:100%; height:580px;">
+
+    <div class="conteneur">
+        <div class=article3>
+            <img src="Randa.jpg">
+            <h4>Pont suspendu de Randa</h4>
+            <p> Le pont suspendu Charles Kuonen complète le parcours de l'Europe à Zermatt, que de nombreux randonneurs considèrent comme le plus beau parcours de deux jours des Alpes. Tout au long de l'itinéraire, le Cervin, le Weisshorn et les Alpes bernoises peuvent être vus de partout, mais depuis Randa, vous pouvez également facilement marcher jusqu'au pont suspendu. Le plus long pont suspendu pour piétons du monde mesure près de 500 mètres de long, surplombant le canyon escarpé de Lachberg à Houschbiel - le point culminant est à 85 mètres au-dessus du sol. L'entrée est évidemment gratuite et le plaisir peut être garanti, car des vides apparaissent toujours sous le plancher à travers la maille du pont. <strong> Venez partagez ce moment incroyable avec vos familles. Une randonnée spéciale qui vous donnera des frissons et dans lequelle vous verrez des paysages magnifiques !</strong></p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        <div class=article3>
+            <img src="Antenne.jpg">
+            <h4>Ascension de l'antenne de Sottens</h4>
+            <p> <strong> Vous aimez la sensation forte ! Venez découvrir l'ascension de l'antenne de Sottens.</strong>Gecko Sensations vous invite à gravir le sommet du majestueux mât métallique au cœur du Gros-de-Vaud depuis 1931. L'ascension de 125m a été mis au placard par l'histoire fascinante  de la radio. A 100 m d'altitude, venez découvrir une dégustation de délicieux produits locaux et même de hot pot apporteront un peu d'irritation aux taches sur les nuages. Là, l'apparence complète contient une vue panoramique à 360 ° sur le plateau français, les lacs, le Jura et les Alpes. Des aventures audacieuses peuvent augmenter votre adrénaline. En un mot? <i> C'est une expérience sensationnelle pour toute la famille</i> .</p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        
+        <div class=article3>
+            <img src="Swiss.jpg">
+            <h4>Swiss Bubble Football</h4>
+            <p> Le Swiss Bubble Football, un sport magnfique. Si vous êtes passionné par le football vous allez trouver ce sport amusant. C'est un sport que vous pouvez partager avec vos familles et vos amis.Le Bubble foot est une activité ludique et intéressante, tous les athlètes (sportifs ou non), les enfants de moins de 7 ans et les adultes peuvent y participer. Il n'est pas nécessaire d'être bon au football, il suffit aux participants de mettre leurs baskets et de se préparer à rire sans interruption. <strong>Les anniversaires, l'esprit d'équipe, les enterrements de vie de garçon ou les divertissements entre amis sont autant de bonnes raisons pour essayer d'inventer le sport le plus primitif de tous les temps.</strong></p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        <div class=article3>
+            <img src="Bungy.jpg">
+            <h4>Bungy Niouc</h4>
+            <p> Vous aimez les sensation forte ! Vous avez envie de ressentir de l'adrénaline venez tester le saut à élastique. Nous sautons à l'élastique à Niouc depuis 1997. C'est l'un des plus hauts sites de saut à l'élastique au monde. C'est également l'un des plus beaux sauts du monde. Le pont suspendu de l’araignée est situé en pleine nature: il surplombe la magnifique vallée au cœur des Alpes suisses. Des parcs naturels, purs et sauvages et des ponts de 190 m vous laissent libre.<strong>Venez tester vos limites en famille mais aussi avec vos amis</strong></p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+
+        <div class=article3>
+            <img src="axe2.jpg">
+            <h4>Axe Throwing Riviera</h4>
+             <p> Passer de moment amusant avec vos amis et famille en jouant au lancer de hache. Pas besoin d'être un bûcheron et de porter une chemise à carreaux pour pouvoir jouer. Vous pouvez jouer à 24 personnes donc n'attendez pas et réserver vite sur le site officiel. </p>
+            <a href="ajouer.html"> À vous de jouer</a>
+        </div>
+    </div>
+         <section id ="Obj">
+            <div class="wrapper">
+            <h1> Connaissez-vous d'autres activitées amusantes ?</h1>
+            <p> <strong> Si vous connaissez d'autres activitées amusantes et que vous souhaitez le partager pour nos futurs voyageurs en Suisse. On vous invite à cliquez sur la rubrique "À vous de jouer " et écrivez nous les actvités que vous avez découvert. Conseillez nos futurs voyageurs pour qu'ils passent un séjour inoubliable. Merci !</strong></p>
+            </div>
+        </section>
+     <div class="footer">
+        <div class="corps-footer">
+
+            <div class="footer2">
+                <h1> Bienvenue en Suisse </h1>
+                <p>
+                    Venez voyager et découvir les différentes activités et lieux que réservent le Suisse. Chez Bienvenue en Suisse on sera disponible 24h/24 et 7j/7 pour tous renseignements. Veuillez nous contactez par mail ou par téléphone. On vous souhaite un agréable voyage à travers notre site. Merci ! </p>
+            </div>
+
+            <div class="footer2">
+                <h2> Liens rapide </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="Accueil.html"> Accueil</a></li>
+                <li><a href="sommes.html"> Qui sommes nous ?</a></li>
+                <li><a href="ajouer.html"> À vous de jouer</a></li>
+                <li><a href="actualité.html"> Actualité</a></li>
+
+            </ul>
+        </div>
+
+            <div class="footer2">
+                <h2> Réseaux sociaux  </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="https://fr-fr.facebook.com"> <img id='fb' src="fb15.png"></a></li>
+                <li><a href="https://www.instagram.com/?hl=fr"><img id='insta' src="insta15.png"> </a></li>
+                <li><a href="https://twitter.com/explore"> <img id='twitter' src="twitter16.png"></a></li>
+                <li><a href="https://www.linkedin.com"> <img id='in' src="in15.png"></a></li>
+
+            </ul>
+        </div>
+            <div class="footer2">
+                <h2> Contact </h2>
+               <div class="bordure"></div>
+                <ul>
+                <li><a href="#" id='navi'> navirash.tharmaseelan@efrei.net</a></li>
+                <li><a href="#" id="theo"> théo.vu@efrei.net</a></li>
+                <li><a href="#" id="alban"> alban.biard@efrei.net</a></li>
+                <li><a href="#" id="tel"> <U>Téléphone: </U> 0152628654</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+        <div class="copyright">Copyright © Tous droits réservés.</div>
+
+
+
